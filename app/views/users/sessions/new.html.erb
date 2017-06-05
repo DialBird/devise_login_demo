@@ -4,6 +4,10 @@
       <i class="fa fa-facebook"></i>facebookログイン
     <% end %>
 
+    <%= link_to user_twitter_omniauth_authorize_path, class: 'btn btn-social btn-twitter btn-lg btn-block mb-25' do %>
+      <i class="fa fa-twitter"></i>twitterログイン
+    <% end %>
+
     <%= f.email_field :email, placeholder: 'Email', class: 'form-control input-lg mb-25' %>
 
     <%= f.password_field :password, placeholder: 'Password', class: 'form-control input-lg mb-25' %>
